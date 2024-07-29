@@ -1,77 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <title>Paragraph Stacking</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script type="text/javascript">
-        var toplayer = "layer4";
-        function stack(totop) {
-            var oldtop = document.getElementById(toplayer).style;
-            var newtop = document.getElementById(totop).style;
-            oldtop.zIndex = "0";
-            newtop.zIndex = "10";
-            toplayer = document.getElementById(totop).id;
-        }
+      var toplayer = "layer4";
+      function stack(totop) {
+        var oldtop = document.getElementById(toplayer).style;
+        var newtop = document.getElementById(totop).style;
+        oldtop.zIndex = "0";
+        newtop.zIndex = "10";
+        toplayer = document.getElementById(totop).id;
+      }
     </script>
-</head>
-<body style="background-color: teal;">
+    <style>
+      .ls1,
+      .ls2,
+      .ls3,
+      .ls4 {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      #layer1 {
+        background-color: pink;
+        z-index: 0;
+        left: 100px;
+      }
+      #layer2 {
+        background-color: blue;
+        z-index: 1;
+        left: 120px;
+        top: 20px;
+      }
+      #layer3 {
+        background-color: gray;
+        z-index: 2;
+        left: 140px;
+        top: 40px;
+      }
+      #layer4 {
+        background-color: yellow;
+        z-index: 3;
+        left: 160px;
+        top: 60px;
+      }
+    </style>
+  </head>
+  <body style="background-color: teal">
     <h1>Program to demonstrate usage of stacking of paragraph</h1>
     <div class="ls1" id="layer1" onmouseover="stack('layer1')">
-        <b>... FIRST PARAGRAPH..DOWN ONE(Pink)..............</b>
+      <b>... FIRST PARAGRAPH..DOWN ONE(Pink)..............</b>
     </div>
     <div class="ls2" id="layer2" onmouseover="stack('layer2')">
-        <b>... SECOND PARA..LAST BUT ONE(Blue)..............</b>
+      <b>... SECOND PARA..LAST BUT ONE(Blue)..............</b>
     </div>
     <div class="ls3" id="layer3" onmouseover="stack('layer3')">
-        <b>... THIRD PARA..(Gray).......</b>
+      <b>... THIRD PARA..(Gray).......</b>
     </div>
     <div class="ls4" id="layer4" onmouseover="stack('layer4')">
-        <b>... TOP LAYER..FOURTH PARAGRAPH...(Yellow)......</b>
+      <b>... TOP LAYER..FOURTH PARAGRAPH...(Yellow)......</b>
     </div>
-</body>
+  </body>
 </html>
-
-
-
-
----MAKE A FILE NAMED styles.css AND PASTE THIS CODE OVER THERE---
-
-
-.ls1, .ls2, .ls3, .ls4 {
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    width: 300px;
-    height: 100px;
-    border: 1px solid black;
-    padding: 10px;
-}
-
-#layer1 {
-    background-color: pink;
-    z-index: 0;
-    left:100px;}
-
-#layer2 {
-    background-color: blue;
-    z-index: 1;
-    left:120px;
-    top: 20px;
-
-}
-
-#layer3 {
-    background-color: gray;
-    z-index: 2;
-    left:140px;
-    top: 40px;
-
-}
-
-#layer4 {
-    background-color: yellow;
-    z-index: 3;
-    left:160px;
-    top: 60px;
-}

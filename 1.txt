@@ -1,6 +1,50 @@
 <?xml version = "1.0" encoding = "utf-8" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns = "http://www.w3.org/1999/xhtml">
+    <style>
+        
+    p, table, li{
+  font-family: "lucida calligraphy", arial, "sans serif";
+  margin-left: 10pt;
+}
+p {
+  word-spacing: 5px;
+}
+body {
+  background-color: rgb(200, 255, 205);
+}
+p,
+li,
+td {
+  font-size: 75%;
+}
+td {
+  padding: 0.5cm;
+}
+th {
+  text-align: center;
+  font-size: 85%;
+}
+h1,
+h2,
+hr {
+  color: #483d8b;
+}
+table {
+  border-style: outset;
+  background-color: rgb(100, 255, 105);
+}
+li {
+  list-style-type: lower-roman;
+}
+span {
+  color: blue;
+  background-color: pink;
+  font-size: 29pt;
+  font-style: italic;
+  font-weight: bold;
+}
+    </style>
 <head>
 <title> Lab program 1 </title>
 <link rel="stylesheet" type="text/css" href="styles.css" /> </head>
@@ -68,48 +112,4 @@
 
 
 
----MAKE A FILE NAMED styles.css AND PASTE THIS CODE OVER THERE--- 
 
-
-
-    p, table, li{
-  font-family: "lucida calligraphy", arial, "sans serif";
-  margin-left: 10pt;
-}
-p {
-  word-spacing: 5px;
-}
-body {
-  background-color: rgb(200, 255, 205);
-}
-p,
-li,
-td {
-  font-size: 75%;
-}
-td {
-  padding: 0.5cm;
-}
-th {
-  text-align: center;
-  font-size: 85%;
-}
-h1,
-h2,
-hr {
-  color: #483d8b;
-}
-table {
-  border-style: outset;
-  background-color: rgb(100, 255, 105);
-}
-li {
-  list-style-type: lower-roman;
-}
-span {
-  color: blue;
-  background-color: pink;
-  font-size: 29pt;
-  font-style: italic;
-  font-weight: bold;
-}

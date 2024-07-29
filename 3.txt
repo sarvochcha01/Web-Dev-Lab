@@ -5,7 +5,19 @@
 .button { background-color: #4CAF50; /* Green */
 border:none; color:white; padding:15px32px; text-align:center; text-decoration:none; display:inline-block; font-size:16px;}
 </style>
-<script src="calculator.js" type="text/javascript"></script>
+<script>function cls()
+{ num1.value="";
+num2.value="";
+result.value=""; }
+function showresult(choise)
+{ var n1=parseFloat(document.getElementById('num1').value);
+var n2=parseFloat(document.getElementById('num2').value); var r;
+var c=choise;
+ 
+switch(c) { case '1': r=n1+n2; break; case'2': r=n1-n2; break;
+case'3': r=n1*n2; break;
+case '4': r=n1/n2; break; default: break; }
+document.getElementById('result').value=r; }</script>
 </head> <body>
 <h1>My calculator</h1>
 <table border="1" cellpadding="5" cellspacing="5" width="600"> <tr align="center">
@@ -22,19 +34,3 @@ border:none; color:white; padding:15px32px; text-align:center; text-decoration:n
 
 
 
----MAKE A FILE NAMED calculator.js AND PASTE THIS CODE OVER THERE---
-
-
-function cls()
-{ num1.value="";
-num2.value="";
-result.value=""; }
-function showresult(choise)
-{ var n1=parseFloat(document.getElementById('num1').value);
-var n2=parseFloat(document.getElementById('num2').value); var r;
-var c=choise;
- 
-switch(c) { case '1': r=n1+n2; break; case'2': r=n1-n2; break;
-case'3': r=n1*n2; break;
-case '4': r=n1/n2; break; default: break; }
-document.getElementById('result').value=r; }

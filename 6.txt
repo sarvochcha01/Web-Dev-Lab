@@ -1,20 +1,24 @@
-<?xml version = "1.0" encoding = "utf-8" ?> 
+<?xml version = "1.0" encoding = "utf-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml"> <head><title> Visibility Control </title>
-<script>
-    function flipimage()
-{ dom=document.getElementById('apple').style;
-                 if(dom.visibility=='visible')
-                    dom.visibility='hidden';
-                 else
-                    dom.visibility='visible';
-} </script>
-</head>
-<body>
-    <img src='https://media.istockphoto.com/id/184276818/photo/red-apple.jpg?s=612x612&w=0&k=20&c=NvO-bLsG0DJ_7Ii8SSVoKLurzjmV0Qi4eGfn6nW3l5w=' id='apple' style='visibility: visible;'/>
-<p>
-<input type='submit' value='Toggle' onclick='flipimage()'/> </p>
-
-
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Visibility Control</title>
+    <script>
+      function flipimage() {
+        dom = document.getElementById("apple").style;
+        if (dom.visibility == "visible") dom.visibility = "hidden";
+        else dom.visibility = "visible";
+      }
+    </script>
+  </head>
+  <body>
+    <img
+      src="https://media.istockphoto.com/id/184276818/photo/red-apple.jpg?s=612x612&w=0&k=20&c=NvO-bLsG0DJ_7Ii8SSVoKLurzjmV0Qi4eGfn6nW3l5w="
+      id="apple"
+      style="visibility: visible"
+    />
+    <p>
+      <input type="submit" value="Toggle" onclick="flipimage()" />
+    </p>
+  </body>
 </html>
