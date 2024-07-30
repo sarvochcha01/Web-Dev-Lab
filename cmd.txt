@@ -2,4 +2,4 @@ a2enmod cgid
 systemctl restart apache2
 cd /usr/lib/cgi-bin
 gedit p8.pl
-chmod 755 /usr/lib/cgi-bin/p8.pl 
+chmod 777 p8.pl 
